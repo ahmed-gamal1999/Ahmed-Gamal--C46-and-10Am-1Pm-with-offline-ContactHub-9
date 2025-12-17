@@ -1,0 +1,551 @@
+body {
+  background-color: #f8fafc;
+  padding-top: 80px;
+}
+header {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.5);
+}
+:root {
+  --my-shadow-color: rgba(16, 24, 40, 0.12);
+  --tw-shadow: 0 1px 3px 0 var(--my-shadow-color),
+    0 0px 3px -1px var(--my-shadow-color);
+  --my-gradient: linear-gradient(to bottom right, #7c3aed, #4f46e5);
+}
+.navicon,
+.button-nav {
+  background: var(--my-gradient);
+}
+.button-nav {
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.1s;
+  padding-inline: 20px;
+  padding-block: 8px;
+  transition: all 0.2s;
+}
+.button-nav:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(59, 24, 116, 0.4);
+}
+.button-nav:active {
+  color: white !important;
+}
+.changa-style-icon-nav {
+  cursor: pointer;
+  color: #505b6d;
+  padding: 10px;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+.changa-style-icon-nav:hover {
+  background-color: rgba(110, 118, 134, 0.1);
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: #752afc;
+}
+.nav-image {
+  width: 35px;
+  height: 35px;
+  border: 1px solid inherit;
+  border-radius: 20%;
+}
+.navAddres {
+  font-size: 25px;
+}
+.navAddres span {
+  color: #7f22fe;
+}
+.navparagraph {
+  font-size: 13px;
+  color: #6e7686;
+  font-weight: 600;
+}
+.fa-address-book {
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+}
+.nav-icon-left {
+  align-items: center;
+}
+.nav-icon-left i {
+  align-content: center;
+  text-align: center;
+}
+.gutter-icon {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  color: #ffffff;
+}
+.one-icon {
+  background-color: #2171ff;
+}
+.two-icon {
+  background-color: #ff8d00;
+}
+.theree-icon {
+  background-color: #f91649;
+}
+.gutter-address {
+  margin: 0;
+  color: #70757c;
+  font-size: 13px;
+}
+.gutter-span {
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+}
+.formGroup {
+  width: 90%;
+  margin: auto;
+}
+.contentRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 9;
+}
+
+.div2 {
+  grid-area: 1 / 9 / 2 / 13;
+}
+.Search-Input {
+  padding-block: 12px;
+  padding-left: 40px;
+  border-radius: 12px;
+  width: 104%;
+}
+.form-control:focus {
+  border-color: oklch(60.6% 0.25 292.717);
+  box-shadow: 0 0 6px 2px oklch(60.6% 0.25 292.717 / 0.35);
+}
+
+.form-control::placeholder {
+  color: #a7acb4;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a7acb4;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.card-icon-head {
+  font-size: 12px;
+  border-radius: 20%;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+.card-icon-one {
+  background-color: #ff9300;
+}
+.card-icon-two {
+  background-color: #f20336;
+}
+
+.card-address-head {
+  font-size: 16px;
+  color: #101828 !important;
+}
+.card-paragraph-head {
+  font-size: 12px;
+  color: #767d8b !important;
+}
+.card-header {
+  background-color: #fff7ed;
+}
+.card-header-tow {
+  background-color: #fef2f2;
+}
+.card-style {
+  border: none;
+  box-shadow: var(--tw-shadow);
+}
+
+.gutter {
+  border: none;
+  box-shadow: var(--tw-shadow);
+}
+.gutter:hover {
+  --tw-shadow: 0 1px 3px 0 var(--my-shadow-color),
+    0 4px 3px -1px var(--my-shadow-color);
+}
+.text-bg-primary {
+  color: #767d8b !important;
+  background-color: white !important;
+}
+.paragraph-all-contact {
+  color: #70757c;
+}
+.modal-star {
+  color: #ffb900;
+}
+.modal-heart {
+  color: #ff2056;
+}
+
+.cancel-button {
+  background: #f3f4f6;
+  color: #000000;
+  border: #f3f4f6 1px solid;
+}
+.cancel-button:hover {
+  background: oklch(92.8% 0.006 264.531);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 6px rgba(59, 24, 116, 0.4);
+  border-color: oklch(92.8% 0.006 264.531);
+  box-shadow: none;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: inherit;
+}
+.save-button {
+  background: var(--my-gradient);
+  color: white;
+}
+.save-button:hover {
+  color: white;
+  box-shadow: 0 4px 6px rgba(59, 24, 116, 0.4);
+}
+.update-button {
+  background: rgb(202, 202, 53);
+  color: white;
+}
+.update-button:hover {
+  background: rgb(202, 202, 53);
+  color: white;
+  box-shadow: 0 4px 6px rgba(104, 116, 24, 0.4);
+}
+.icon-doun-box {
+  color: #d1d5dc;
+  width: 70px;
+  height: 70px;
+  background-color: #f3f4f6;
+  border-radius: 15%;
+}
+.address-doun-box {
+  color: #6a7482;
+}
+.paragraph-doun-box {
+  color: oklch(70.7% 0.022 261.325);
+}
+.contactBox {
+  width: 106%;
+}
+.card-header {
+  color: black;
+}
+.card-left-box {
+  background-color: white;
+  min-height: 207px;
+}
+.box-name-contact {
+  align-self: center;
+  background-color: #f50e65;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+}
+.favorite-box {
+  background-color: #f9fafb;
+  cursor: pointer;
+  padding-block: 7px;
+  padding-inline: 10px;
+}
+.favorite-box:hover .icon-call-fav {
+  background-color: #00bc7d !important;
+  color: #ffffff !important;
+}
+.favorite-box:hover .icon-call-emerg {
+  background-color: #ff2056 !important;
+  color: #ffffff !important;
+}
+.favorite-box:hover {
+  background-color: #fffbeb;
+}
+
+.icon-contact {
+  align-self: center;
+  background-color: #f50e65;
+  color: white;
+  width: 37px;
+  height: 37px;
+  border-radius: 15%;
+  text-align: center;
+  align-content: center;
+  padding-bottom: 2px;
+}
+.change-style-box {
+  font-size: 12px;
+  align-content: center;
+  color: rgb(36, 34, 34);
+}
+.icon-call-fav {
+  background-color: #d0fae5 !important;
+  color: #009966 !important;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10%;
+  transition: 0.2s all;
+}
+.icon-call-emerg {
+  background-color: #ffe4e6 !important;
+  color: #ec003f !important;
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10%;
+  transition: 0.2s all;
+}
+
+.number-contact-box i {
+  font-size: 10px;
+  color: #155dfc;
+  background-color: #dbeafe;
+  padding: 7px;
+  border-radius: 15%;
+}
+.number-contact-box p {
+  font-size: 12px;
+  color: #6a7282;
+  align-self: center;
+}
+.header-box-content-down p {
+  font-size: 13px;
+  color: #6a7282;
+}
+
+.header-box-content-down i {
+  text-align: center;
+  align-content: center;
+  font-size: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20%;
+}
+.email-style {
+  background-color: #ede9fe;
+  color: #7f22fe;
+}
+.location-style {
+  background-color: #d0fae5;
+  color: #009966;
+}
+.contact-footer i {
+  width: 35px;
+  height: 35px;
+  font-size: 13px;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 20%;
+  color: #6a7282;
+}
+.contact-footer i:hover {
+  background-color: #f3f4f6;
+}
+.box-contact {
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  box-shadow: var(--tw-shadow);
+  transition: all 0.2s;
+  min-height: 276px;
+  max-height: 276px;
+}
+.box-contact:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 10px;
+}
+.form-check-input:checked {
+  background-color: #89379f;
+  border-color: #89379f;
+}
+.form-check-input:focus {
+  box-shadow: none;
+}
+.badge-box-data {
+  font-size: 12px;
+}
+.span-one {
+  background-color: #dbfce7;
+  color: #008235;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 7px;
+}
+.span-tow {
+  background-color: #fff1f2;
+  color: #ec003f;
+  padding-block: 5px;
+  padding-inline: 10px;
+  border-radius: 7px;
+}
+.icon-call {
+  background-color: #ecfdf5;
+  color: #009966 !important;
+}
+.icon-call:hover {
+  background-color: #d0fae5 !important;
+}
+.icon-message {
+  background-color: oklch(96.9% 0.016 293.756);
+  color: #7f22fe !important;
+}
+.icon-message:hover {
+  background-color: #ede9fe !important;
+  color: #ffb900 !important;
+}
+.star-active {
+  color: gold !important;
+}
+.heart-active {
+  color: red !important;
+}
+.icon-star:hover {
+  color: #ffb900;
+}
+
+.icon-heart:hover {
+  color: red;
+}
+
+.icon-pencil:hover {
+  color: #4f39f6 !important;
+  background-color: #eef2ff !important;
+}
+.icon-delete:hover {
+  background-color: #fff1f2 !important;
+  color: red;
+}
+.starChangePosation {
+  color: white;
+  position: absolute;
+  background-color: #ffb900;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  font-size: 8px;
+  right: -5px;
+  top: -5px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.emergencyChangePosation {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  font-size: 8px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+.contact-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+.contact-initials {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ccc;
+  font-weight: bold;
+  font-size: 18px;
+}
+#contactFile {
+  display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #f1f3f7;
+  border-radius: 5px;
+  transition: all.3s;
+  width: 32%;
+  align-self: center;
+  padding: 5px 5px;
+  color: #383d46;
+  font-weight: 500;
+  font-size: 14px;
+}
+.custom-file-upload:hover {
+  background-color: #e5e7eb;
+}
+.camera-file {
+  font-size: 13px;
+  padding: 5px 5px;
+  color: #6a7282;
+}
+.contact-img {
+  object-fit: cover;
+  border-radius: 15% !important;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
