@@ -142,7 +142,7 @@ header {
   padding-block: 12px;
   padding-left: 40px;
   border-radius: 12px;
-  width: 104%;
+  width: 100%;
 }
 .form-control:focus {
   border-color: oklch(60.6% 0.25 292.717);

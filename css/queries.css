@@ -1,0 +1,80 @@
+@media screen and (max-width: 1024px) {
+  .parent {
+    grid-template-columns: 1fr;
+  }
+
+  .div1 {
+    grid-area: auto;
+  }
+
+  .div2 {
+    grid-area: auto;
+    margin-top: 30px;
+  }
+
+  .contentRight {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .Search-Input {
+    width: 100%;
+  }
+
+  .contactBox {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+  .contentRight {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navAddres {
+    font-size: 20px;
+  }
+
+  .navparagraph {
+    font-size: 11px;
+  }
+
+  .button-nav {
+    padding-inline: 12px;
+    font-size: 12px;
+  }
+
+  .gutter-span {
+    font-size: 20px;
+  }
+
+  .card-style {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-nav {
+    width: 100%;
+  }
+
+  .gutter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gutter-icon {
+    margin-bottom: 8px;
+  }
+
+  .formGroup {
+    width: 100%;
+  }
+}
